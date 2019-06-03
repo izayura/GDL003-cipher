@@ -7,7 +7,44 @@
   </head>
   <body>
     <div id="root">
-      <h1>Esta es una prueba de texto para el Git Bash y mostrarsela a Valo</h1>
+      <h1>Esta es una prueba de texto mientras trabajo en el JS</h1>
+    </div>
+    <!--Pagina de bienvenida para pedir nombre, agregar 2 botones
+    que manden a la pagina de Cifrar1 o Descifrar1-->
+    <div id="Bienvenida">
+    </div>
+    <!--Saludar por nombre, pequeña explicación de como funciona, caja de texto
+    para mensaje a codificar, seleccionar cuantos espacios recorrer en el
+    cifrado,formulario para agregar contraseña al cifrado(si alcanza tiempo),
+    boton para cifrar-->
+    <div id="Cifrar1">
+      <textarea id="textoCifrar" rows="10" cols="50">
+      </textarea>
+      <p>Selecciona el número de caracteres a recorrer para crear
+         tu mensaje oculto</p>
+      <input type="text" id="CaraCifrar" placeholder="Carácteres a recorrer"
+      min="1" max="100">
+      <input type="submit" value="Cifrar" onclick="funcionCifrar()">
+    </div>
+    <!--Mensaje ya cifrado en caja de texto. Boton para cifrar otro mensaje y
+    o otro para descrifrar(que mande a Descifrar1)-->
+    <div id="Cifrar2">
+    </div>
+    <!--Saludar por nombre, pequeña explicación de como funciona, caja de texto
+    para mensaje a decodificar, seleccionar cuantos espacios recorrer en el
+    decifrado, pedir contraseña(si alcanzo), boton para descifrar-->
+    <div id="Descifrar1">
+      <textarea id="textoDescifrar" rows="10" cols="50">
+      </textarea>
+      <p>Selecciona el número de caracteres que se recorrieron para descifrar
+         tu mensaje oculto</p>
+      <input type="text" id="CaraDescifrar" placeholder="Carácteres recorridos"
+        min="1" max="100">
+       <input type="submit" value="Descifrar" onclick="funcionDescifrar()">
+    </div>
+    <!--Mensaje ya descifrado en caja de texto. Boton para descifrar
+    otro mensaje o otro para cifrar(que mande a Cifrar1)-->
+    <div id="Descifrar2">
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
