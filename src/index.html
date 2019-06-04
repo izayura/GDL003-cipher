@@ -17,34 +17,35 @@
     para mensaje a codificar, seleccionar cuantos espacios recorrer en el
     cifrado,formulario para agregar contraseña al cifrado(si alcanza tiempo),
     boton para cifrar-->
-    <div id="Cifrar1">
+    <div id="cifrar1">
       <textarea id="textoCifrar" rows="10" cols="50">
       </textarea>
       <p>Selecciona el número de caracteres a recorrer para crear
          tu mensaje oculto</p>
-      <input type="text" id="CaraCifrar" placeholder="Carácteres a recorrer"
+      <input type="text" id="caraCifrar" placeholder="Carácteres a recorrer"
       min="1" max="100">
-      <input type="submit" value="Cifrar" onclick="funcionCifrar()">
+      <input type="submit" value="cifrar" onclick="funcionCifrar();">
     </div>
     <!--Mensaje ya cifrado en caja de texto. Boton para cifrar otro mensaje y
     o otro para descrifrar(que mande a Descifrar1)-->
-    <div id="Cifrar2">
+    <div id="cifrar2">
+      <h1 id="textoCifrado"
     </div>
     <!--Saludar por nombre, pequeña explicación de como funciona, caja de texto
     para mensaje a decodificar, seleccionar cuantos espacios recorrer en el
     decifrado, pedir contraseña(si alcanzo), boton para descifrar-->
-    <div id="Descifrar1">
+    <div id="descifrar1">
       <textarea id="textoDescifrar" rows="10" cols="50">
       </textarea>
       <p>Selecciona el número de caracteres que se recorrieron para descifrar
          tu mensaje oculto</p>
-      <input type="text" id="CaraDescifrar" placeholder="Carácteres recorridos"
+      <input type="text" id="caraDescifrar" placeholder="Carácteres recorridos"
         min="1" max="100">
-       <input type="submit" value="Descifrar" onclick="funcionDescifrar()">
+       <input type="submit" value="descifrar" onclick="funcionDescifrar()">
     </div>
     <!--Mensaje ya descifrado en caja de texto. Boton para descifrar
     otro mensaje o otro para cifrar(que mande a Cifrar1)-->
-    <div id="Descifrar2">
+    <div id="descifrar2">
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
