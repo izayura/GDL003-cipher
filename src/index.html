@@ -35,12 +35,14 @@ value="Descifrar un mensaje">
          tu mensaje oculto</p>
       <input type="text" id="caraCifrar" placeholder="Carácteres a recorrer"
       min="1" max="5">
-      <input type="submit" value="cifrar" onclick="funcionCifrar();">
+      <input type="submit" value="Cifrar mensaje" onclick="funcionCifrar();">
     </div>
     <!--Mensaje ya cifrado en caja de texto. Boton para cifrar otro mensaje y
     o otro para descrifrar(que mande a Descifrar1)-->
     <div id="cifrar2" style="display:none">
-      <h1 id="textoCifrado"
+      <h1 id="textoCifrado"></h1>
+      <input type="submit" value="Cifrar otro mensaje" onclick="irCifrar2();">
+      <input type="submit" value="Descifrar un mensaje" onclick="irDescifrar2();">
     </div>
     <!--Saludar por nombre, pequeña explicación de como funciona, caja de texto
     para mensaje a decodificar, seleccionar cuantos espacios recorrer en el
@@ -52,11 +54,13 @@ value="Descifrar un mensaje">
          tu mensaje oculto</p>
       <input type="text" id="caraDescifrar" placeholder="Carácteres recorridos"
         min="1" max="100">
-       <input type="submit" value="descifrar" onclick="funcionDescifrar()">
+       <input type="submit" value="Descifrar mensaje" onclick="funcionDescifrar();">
     </div>
     <!--Mensaje ya descifrado en caja de texto. Boton para descifrar
     otro mensaje o otro para cifrar(que mande a Cifrar1)-->
     <div id="descifrar2" style="display:none">
+      <input type="submit" value="Descifrar otro mensaje" onclick="irDescifrar2();">
+      <input type="submit" value="Cifrar un mensaje" onclick="irCifrar2();">
     </div>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
