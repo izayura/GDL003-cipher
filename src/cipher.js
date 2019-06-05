@@ -1,10 +1,9 @@
     //window.cipher = {
 
-      //si es un numero va solo el numero, si es una palabra o letra va entre ""
-    //asi que si esta entre "", buscar como transformarlo en numero
 function funcionCifrar() {
   document.getElementById("cifrar1").style.display="none";
   document.getElementById("cifrar2").style.display="block";
+
   var cifrado=document.getElementById("textoCifrar").value;
   var espaciosCifrar=document.getElementById("caraCifrar").value;
   var espacio="";
@@ -14,16 +13,34 @@ function funcionCifrar() {
     var textAscii=cifrado.charCodeAt(i);
     if (textAscii>=65 && textAscii<=90) {
     var ascii=(textAscii-65+parseInt(espaciosCifrar))%26+65;
-    resultado = String.fromCharCode(ascii);
-    espacio+=ascii;
+    var resultado = String.fromCharCode(ascii);
+    espacio+=resultado;
      }
     document.getElementById("textoCifrado").innerHTML=espacio;
       }
     }
 
+
+
+
 function funcionDescifrar(){
   document.getElementById("descifrar1").style.display="none";
   document.getElementById("descifrar2").style.display="block";
+
+  var descifrado=document.getElementById("textoDescifrar").value;
+  var espaciosDescifrar=document.getElementById("caraDescifrar").value;
+  var espacio="";
+
+    for (i=0; i < descifrado.length; i++) {
+//esta funcion hace que se elijan todas las letras dentro del bucle for
+    var textAscii=descifrado.charCodeAt(i);
+    if (textAscii>=65 && textAscii<=90) {
+    var ascii=(textAscii-65-parseInt(espaciosDescifrar))%26+65;
+    var resultado = String.fromCharCode(ascii);
+    espacio+=resultado;
+     }
+    document.getElementById("textoDescifrado").innerHTML=espacio;
+      }
 }
 /*<div class="contenedor">
 <input type="text" id="campoEntrada" class="entrada"/>
