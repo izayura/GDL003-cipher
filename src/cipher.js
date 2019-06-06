@@ -6,22 +6,30 @@ function funcionCifrar() {
 
   var cifrado=document.getElementById("textoCifrar").value;
   var espaciosCifrar=document.getElementById("caraCifrar").value;
-  var espacio="";
+  var solucion="";
 
     for (i=0; i < cifrado.length; i++) {
 //esta funcion hace que se elijan todas las letras dentro del bucle for
     var textAscii=cifrado.charCodeAt(i);
+
     if (textAscii>=65 && textAscii<=90) {
-    var ascii=(textAscii-65+parseInt(espaciosCifrar))%26+65;
-    var resultado = String.fromCharCode(ascii);
-    espacio+=resultado;
-     }
-    document.getElementById("textoCifrado").innerHTML=espacio;
-      }
+      var ascii=(textAscii-65+parseInt(espaciosCifrar))%26+65;
+      var resultado = String.fromCharCode(ascii);
+      solucion+=resultado;
+
+     } else if(textAscii==32){
+      var espacioVacio= " ";
+      solucion+=espacioVacio;
     }
 
+  /*  RESOLVER MINUSUCULAS else if (textAscii>=97 && textAscii<=122) {
+       var asciiMin=(textAscii-97+parseInt(espaciosCifrar))%26+97;
+       var resultadoMin = String.fromCharCode(asciiMin);
+       solucion+=resultadoMin; */
 
-
+    document.getElementById("textoCifrado").innerHTML=solucion;
+      }
+    }
 
 function funcionDescifrar(){
   document.getElementById("descifrar1").style.display="none";
@@ -29,7 +37,7 @@ function funcionDescifrar(){
 
   var descifrado=document.getElementById("textoDescifrar").value;
   var espaciosDescifrar=document.getElementById("caraDescifrar").value;
-  var espacio="";
+  var solucion="";
 
     for (i=0; i < descifrado.length; i++) {
 //esta funcion hace que se elijan todas las letras dentro del bucle for
@@ -37,9 +45,12 @@ function funcionDescifrar(){
     if (textAscii>=65 && textAscii<=90) {
     var ascii=(textAscii-65-parseInt(espaciosDescifrar))%26+65;
     var resultado = String.fromCharCode(ascii);
-    espacio+=resultado;
+    solucion+=resultado;
+     } else if(textAscii==32){
+       var espacioVacio= " ";
+       solucion+=espacioVacio;
      }
-    document.getElementById("textoDescifrado").innerHTML=espacio;
+    document.getElementById("textoDescifrado").innerHTML=solucion;
       }
 }
 /*<div class="contenedor">
