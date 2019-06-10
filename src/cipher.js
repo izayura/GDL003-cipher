@@ -1,18 +1,19 @@
-    //window.cipher = {
+window.cipher = {
+  encode: (textoCifrar, caraCifrar) => {
 
-function funcionCifrar() {
-  document.getElementById("cifrar1").style.display="none";
-  document.getElementById("cifrar2").style.display="block";
 
-  var cifrado=document.getElementById("textoCifrar").value;
-  var espaciosCifrar=document.getElementById("caraCifrar").value;
+  var cifrado=textoCifrar.value;
+  var espaciosCifrar=caraCifrar.value;
   var solucion="";
 
-    for (i=0; i < cifrado.length; i++) {
+    for (let i=0; i < cifrado.length; i++) {
 //esta funcion hace que se elijan todas las letras dentro del bucle for
     var textAscii=cifrado.charCodeAt(i);
-
-    if (textAscii>=65 && textAscii<=90) {
+/*var ascii=(textAscii+parseInt(espaciosCifrar))%255;
+var resultado=String.fromCharCode(ascii);
+solucion+=resultado;
+}*/
+if (textAscii>=65 && textAscii<=90) {
       var ascii=(textAscii-65+parseInt(espaciosCifrar))%26+65;
       var resultado = String.fromCharCode(ascii);
       solucion+=resultado;
@@ -21,38 +22,41 @@ function funcionCifrar() {
       var espacioVacio= " ";
       solucion+=espacioVacio;
     }
-
   /*  RESOLVER MINUSUCULAS else if (textAscii>=97 && textAscii<=122) {
        var asciiMin=(textAscii-97+parseInt(espaciosCifrar))%26+97;
        var resultadoMin = String.fromCharCode(asciiMin);
        solucion+=resultadoMin; */
 
-    document.getElementById("textoCifrado").innerHTML=solucion;
+  return solucion;
+  //  document.getElementById("textoCifrado").innerHTML=solucion;
       }
     }
+  };
 
-function funcionDescifrar(){
-  document.getElementById("descifrar1").style.display="none";
-  document.getElementById("descifrar2").style.display="block";
+  window.cipher = {
+  decode: function(textoDescifrar, caraDescifrar){
 
-  var descifrado=document.getElementById("textoDescifrar").value;
-  var espaciosDescifrar=document.getElementById("caraDescifrar").value;
+  var descifrado=textoDescifrar.value;
+  var espaciosDescifrar=caraDescifrar.value;
   var solucion="";
 
-    for (i=0; i < descifrado.length; i++) {
+    for (let i=0; i < descifrado.length; i++) {
 //esta funcion hace que se elijan todas las letras dentro del bucle for
     var textAscii=descifrado.charCodeAt(i);
     if (textAscii>=65 && textAscii<=90) {
     var ascii=(textAscii-65-parseInt(espaciosDescifrar))%26+65;
     var resultado = String.fromCharCode(ascii);
     solucion+=resultado;
+
      } else if(textAscii==32){
        var espacioVacio= " ";
        solucion+=espacioVacio;
      }
-    document.getElementById("textoDescifrado").innerHTML=solucion;
+  return solucion;
+  //  document.getElementById("textoDescifrado").innerHTML=solucion;
       }
 }
+};
 /*<div class="contenedor">
 <input type="text" id="campoEntrada" class="entrada"/>
     <div id="pantalla" class="salida" ></div>

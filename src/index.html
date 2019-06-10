@@ -7,7 +7,7 @@
   </head>
   <body>
     <div id="root">
-      <h1>Esta es una prueba de texto mientras trabajo en el JS</h1>
+      <h1></h1>
     </div>
     <!--Pagina de bienvenida para pedir nombre, agregar 2 botones
     que manden a la pagina de Cifrar1 o Descifrar1-->
@@ -18,9 +18,9 @@
        <h3>¿Como te llamas?</h3>
       <form id="formulario"><center>
 <input type="text" class="text" id="nombre" placeholder="Escribe tu nombre aqui">
-<input type="button" class="button" onclick="irCifrar();" id="botonIrCifrar"
+<input type="button" class="button" id="botonIrCifrar"
 value="Cifra un mensaje">
-<input type="button" class="button" onclick="irDescifrar();" id="botonIrDescifrar"
+<input type="button" class="button" id="botonIrDescifrar"
 value="Descifrar un mensaje">
 <br>
 <br>
@@ -39,8 +39,8 @@ value="Descifrar un mensaje">
          <p>Selecciona el número de caracteres a recorrer para crear
          tu mensaje oculto</p>
       <input type="text" class="text" id="caraCifrar" placeholder="Carácteres a recorrer"
-      min="1" max="5">
-      <input type="submit" class="button" value="Cifrar mensaje" onclick="funcionCifrar();">
+      min="1" max="100">
+      <input type="button" class="button" value="Cifrar mensaje" id="cifrar" >
       <br>
       <br>
     </div>
@@ -48,8 +48,8 @@ value="Descifrar un mensaje">
     o otro para descrifrar(que mande a Descifrar1)-->
     <div id="cifrar2" style="display:none">
       <h1 id="textoCifrado"></h1>
-      <input type="reset" class="button" value="Cifrar otro mensaje" onclick="irCifrar2();">
-      <input type="reset" class="button" value="Descifrar un mensaje" onclick="irDescifrar2();">
+      <input type="button" class="button" value="Cifrar otro mensaje" id="botonIrCifrar2" >
+      <input type="button" class="button" value="Descifrar un mensaje" id="botonIrDescifrar2" >
       <br>
       <br>
     </div>
@@ -65,7 +65,7 @@ value="Descifrar un mensaje">
          tu mensaje oculto</p>
       <input type="text" class="text" id="caraDescifrar" placeholder="Carácteres recorridos"
         min="1" max="100">
-       <input type="submit" class="button" value="Descifrar mensaje" onclick="funcionDescifrar();">
+       <input type="button" class="button" value="Descifrar mensaje" id="descifrar">
        <br>
        <br>
      </div>
@@ -73,8 +73,8 @@ value="Descifrar un mensaje">
     otro mensaje o otro para cifrar(que mande a Cifrar1)-->
     <div id="descifrar2" style="display:none">
         <h1 id="textoDescifrado"></h1>
-      <input type="reset" class="button" value="Descifrar otro mensaje" onclick="irDescifrar2();">
-      <input type="reset" class="button" value="Cifrar un mensaje" onclick="irCifrar2();">
+      <input type="reset" class="button" value="Descifrar otro mensaje" id="botonIrCifrar3">
+      <input type="reset" class="button" value="Cifrar un mensaje" id="botonIrDescifrar3">
       <br>
       <br>
     </div>
