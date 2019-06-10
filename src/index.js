@@ -13,7 +13,7 @@ document.getElementById("bienvenida").style.display="block";
   document.getElementById("cifrar2").style.display="block";
   var cifrado=textoCifrar.value;
   var espaciosCifrar=caraCifrar.value;
-  var resultadoCifrado=window.cipher.encode(cifrado, espaciosCifrar);
+  var resultadoCifrado=window.cipher.encode(textoCifrar, caraCifrar);
   document.getElementById("textoCifrado").innerHTML=resultadoCifrado;
   } );
 
@@ -22,7 +22,7 @@ document.getElementById("bienvenida").style.display="block";
   document.getElementById("descifrar2").style.display="block";
   var descifrado=textoDescifrar.value;
   var espaciosDescifrar=caraDescifrar.value;
-  var resultadoDescifrado=window.cipher.decode(descifrado, espaciosDescifrar);
+  var resultadoDescifrado=window.cipher.decode(textoDescifrar, caraDescifrar);
   document.getElementById("textoDescifrado").innerHTML=resultadoDescifrado;
   } );
 

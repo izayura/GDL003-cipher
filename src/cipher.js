@@ -26,11 +26,10 @@ if (textAscii>=65 && textAscii<=90) {
        var asciiMin=(textAscii-97+parseInt(espaciosCifrar))%26+97;
        var resultadoMin = String.fromCharCode(asciiMin);
        solucion+=resultadoMin; */
-
-  return solucion;
   //  document.getElementById("textoCifrado").innerHTML=solucion;
       }
     }
+      return solucion;
   };
 
   window.cipher = {
@@ -52,10 +51,10 @@ if (textAscii>=65 && textAscii<=90) {
        var espacioVacio= " ";
        solucion+=espacioVacio;
      }
-  return solucion;
   //  document.getElementById("textoDescifrado").innerHTML=solucion;
       }
 }
+return solucion;
 };
 /*<div class="contenedor">
 <input type="text" id="campoEntrada" class="entrada"/>
