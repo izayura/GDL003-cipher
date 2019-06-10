@@ -11,8 +11,8 @@ document.getElementById("bienvenida").style.display="block";
   cifrar.addEventListener("click", ()=>{
   document.getElementById("cifrar1").style.display="none";
   document.getElementById("cifrar2").style.display="block";
-  var cifrado=textoCifrar.value;
-  var espaciosCifrar=caraCifrar.value;
+  /*var cifrado=textoCifrar.value;
+  var espaciosCifrar=caraCifrar.value;*/
   var resultadoCifrado=window.cipher.encode(textoCifrar, caraCifrar);
   document.getElementById("textoCifrado").innerHTML=resultadoCifrado;
   } );
@@ -20,9 +20,9 @@ document.getElementById("bienvenida").style.display="block";
   descifrar.addEventListener("click", ()=>{
   document.getElementById("descifrar1").style.display="none";
   document.getElementById("descifrar2").style.display="block";
-  var descifrado=textoDescifrar.value;
-  var espaciosDescifrar=caraDescifrar.value;
-  var resultadoDescifrado=window.cipher.decode(textoDescifrar, caraDescifrar);
+/*  var descifrado=textoDescifrar.value;
+  var espaciosDescifrar=caraDescifrar.value;*/
+  var resultadoDescifrado=window.decipher.decode(textoDescifrar, caraDescifrar);
   document.getElementById("textoDescifrado").innerHTML=resultadoDescifrado;
   } );
 

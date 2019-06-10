@@ -28,12 +28,12 @@ if (textAscii>=65 && textAscii<=90) {
        solucion+=resultadoMin; */
   //  document.getElementById("textoCifrado").innerHTML=solucion;
       }
+        return solucion;
     }
-      return solucion;
   };
 
-  window.cipher = {
-  decode: function(textoDescifrar, caraDescifrar){
+  window.decipher = {
+  decode: (textoDescifrar, caraDescifrar)=>{
 
   var descifrado=textoDescifrar.value;
   var espaciosDescifrar=caraDescifrar.value;
@@ -53,8 +53,8 @@ if (textAscii>=65 && textAscii<=90) {
      }
   //  document.getElementById("textoDescifrado").innerHTML=solucion;
       }
+      return solucion;
 }
-return solucion;
 };
 /*<div class="contenedor">
 <input type="text" id="campoEntrada" class="entrada"/>
