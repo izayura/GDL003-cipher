@@ -1,19 +1,18 @@
-document.getElementById("bienvenida").style.display="block";
-  document.getElementById("nombre").value="";
-  var name=document.getElementById("nombre").value;
-  var textoCifrar=document.getElementById("textoCifrar");
-  var caraCifrar=document.getElementById("caraCifrar");
-  var textoDescifrar=document.getElementById("textoDescifrar");
-  var caraDescifrar=document.getElementById("caraDescifrar");
-  var cifrar=document.getElementById("cifrar");
-  var descifrar=document.getElementById("descifrar");
+  document.getElementById("bienvenida").style.display="block";
+  let name=document.getElementById("nombre").value;
+  let textoCifrar=document.getElementById("textoCifrar").value;
+  let caraCifrar=document.getElementById("caraCifrar").value;
+  let textoDescifrar=document.getElementById("textoDescifrar").value;
+  let caraDescifrar=document.getElementById("caraDescifrar").value;
+  let cifrar=document.getElementById("cifrar");
+  let descifrar=document.getElementById("descifrar");
 
   cifrar.addEventListener("click", ()=>{
   document.getElementById("cifrar1").style.display="none";
   document.getElementById("cifrar2").style.display="block";
   /*var cifrado=textoCifrar.value;
   var espaciosCifrar=caraCifrar.value;*/
-  var resultadoCifrado=window.cipher.encode(textoCifrar, caraCifrar);
+  let resultadoCifrado=window.cipher.encode(caraCifrar, textoCifrar);
   document.getElementById("textoCifrado").innerHTML=resultadoCifrado;
   } );
 
@@ -22,7 +21,7 @@ document.getElementById("bienvenida").style.display="block";
   document.getElementById("descifrar2").style.display="block";
 /*  var descifrado=textoDescifrar.value;
   var espaciosDescifrar=caraDescifrar.value;*/
-  var resultadoDescifrado=window.decipher.decode(textoDescifrar, caraDescifrar);
+  let resultadoDescifrado=window.cipher.decode(caraDescifrar, textoDescifrar);
   document.getElementById("textoDescifrado").innerHTML=resultadoDescifrado;
   } );
 
@@ -34,9 +33,9 @@ document.getElementById("bienvenida").style.display="block";
     document.getElementById("saludoCifrar").innerHTML= name + " para cifrar tu mensaje debes escribirlo en la siguiente caja de texto";
     textoCifrar.value="";
     caraCifrar.value="";
-
   };
-  const descifrar1 = function(){
+
+  const descifrar1 =()=>{
     document.getElementById("bienvenida").style.display="none";
     document.getElementById("cifrar2").style.display="none";
     document.getElementById("descifrar2").style.display="none";
@@ -44,7 +43,6 @@ document.getElementById("bienvenida").style.display="block";
     document.getElementById("saludoDescifrar").innerHTML= name + " para descifrar tu mensaje debes escribirlo en la siguiente caja de texto";
     textoDescifrar.value="";
     caraDescifrar.value="";
-
   };
 
   let botonCifrar=document.getElementById("botonIrCifrar");
