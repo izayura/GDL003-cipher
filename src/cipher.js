@@ -13,18 +13,32 @@ solucion+=resultado;
         let resultado = String.fromCharCode(ascii);
         solucion+=resultado;
       } else if (textAscii>=97 && textAscii<=122) {
-        var asciiMin=(textAscii-97+parseInt(caraCifrar))%26+97;
-        var resultadoMin = String.fromCharCode(asciiMin);
+        let asciiMin=(textAscii-97+parseInt(caraCifrar))%26+97;
+        let resultadoMin = String.fromCharCode(asciiMin);
         solucion+=resultadoMin;
+      } else if (textAscii>=32 && textAscii<=64) {
+        let asciiCar=(textAscii-32+parseInt(caraCifrar))%33+32;
+        let resultadoCar = String.fromCharCode(asciiCar);
+        solucion+=resultadoCar;
+  /*  } else if (textAscii==165){
+         let eneMay= "&Ntilde;";
+         solucion+=eneMay;
+       } else if (textAscii==164){
+          let eneMin="\u00F1";
+          solucion+=eneMin;
+      /*} else if (textAscii>=129 && textAscii<=165) {
+        let asciiCar2=(textAscii-129+parseInt(caraCifrar))%37+129;
+        let resultadoCar2 = String.fromCharCode(asciiCar2);
+        solucion+=resultadoCar2;
 /*} else if (textAscii==165){
    let eñeMay="Ñ";
    solucion+=eñeMay;
  }else if (textAscii==164){
    let eñeMin="ñ";
    solucion+=eñeMin;*/
-      } else if(textAscii==32){
+      /*} else if(textAscii==32){
         let espacioVacio= " ";
-        solucion+=espacioVacio;
+        solucion+=espacioVacio;*/
         }
       }
       return solucion;
@@ -43,29 +57,12 @@ solucion+=resultado;
           var asciiMin=(textAscii-122-parseInt(caraDescifrar))%26+122;
           var resultadoMin = String.fromCharCode(asciiMin);
           solucion+=resultadoMin;
-        } else if(textAscii==32){
-          let espacioVacio= " ";
-          solucion+=espacioVacio;
+        } else if (textAscii>=32 && textAscii<=64) {
+          let asciiCar=(textAscii-64-parseInt(caraDescifrar))%33+64;
+          let resultadoCar = String.fromCharCode(asciiCar);
+          solucion+=resultadoCar;
           }
-      }
+        }
       return solucion;
     }
 };
-
-// ESTO ESTABA ANTES EN EL ARCHIVO window.cipher = {
-// encode: funcionCifrar(string, offset)  {
-  //document.getElementById("cifrar1").style.display="none";
-  //document.getElementById("cifrar2").style.display="block";
-  //var cifrado=document.getElementById("textoCifrar").value;
-//si es un numero va solo el numero, si es una palabra o letra va entre ""
-//asi que si esta entre "", buscar como transformarlo en numero
-//  var espaciosCifrar=document.getElementById("caraCifrar").value;
-//var ascii=(cifrado.charCodeAt()-65+parseInt(espaciosCifrar))%26+65;
-//document.getElementById("textoCifrado").innerHTML=ascii.fromCharCode;
-//return "textoCifrado";
-//},
-
-//decode: funcionDescifrar(string, offset){
-//return "textoDescifrado";
-
-// };

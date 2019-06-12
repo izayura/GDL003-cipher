@@ -1,5 +1,12 @@
   document.getElementById("bienvenida").style.display="block";
-  nombre.value="";
+  let name=document.getElementById("nombre");
+  name.value="";
+  let textoCifrar=document.getElementById("textoCifrar");
+  let caraCifrar=document.getElementById("caraCifrar");
+  let textoDescifrar=document.getElementById("textoDescifrar");
+  let caraDescifrar=document.getElementById("caraDescifrar");
+
+
   let cifrar=document.getElementById("cifrar");
   let descifrar=document.getElementById("descifrar");
 
