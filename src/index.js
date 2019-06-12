@@ -1,17 +1,13 @@
   document.getElementById("bienvenida").style.display="block";
-  let name=document.getElementById("nombre").value;
-  let textoCifrar=document.getElementById("textoCifrar").value;
-  let caraCifrar=document.getElementById("caraCifrar").value;
-  let textoDescifrar=document.getElementById("textoDescifrar").value;
-  let caraDescifrar=document.getElementById("caraDescifrar").value;
+  nombre.value="";
   let cifrar=document.getElementById("cifrar");
   let descifrar=document.getElementById("descifrar");
 
   cifrar.addEventListener("click", ()=>{
   document.getElementById("cifrar1").style.display="none";
   document.getElementById("cifrar2").style.display="block";
-  /*var cifrado=textoCifrar.value;
-  var espaciosCifrar=caraCifrar.value;*/
+  let textoCifrar=document.getElementById("textoCifrar").value;
+  let caraCifrar=document.getElementById("caraCifrar").value;
   let resultadoCifrado=window.cipher.encode(caraCifrar, textoCifrar);
   document.getElementById("textoCifrado").innerHTML=resultadoCifrado;
   } );
@@ -19,8 +15,8 @@
   descifrar.addEventListener("click", ()=>{
   document.getElementById("descifrar1").style.display="none";
   document.getElementById("descifrar2").style.display="block";
-/*  var descifrado=textoDescifrar.value;
-  var espaciosDescifrar=caraDescifrar.value;*/
+  let textoDescifrar=document.getElementById("textoDescifrar").value;
+  let caraDescifrar=document.getElementById("caraDescifrar").value;
   let resultadoDescifrado=window.cipher.decode(caraDescifrar, textoDescifrar);
   document.getElementById("textoDescifrado").innerHTML=resultadoDescifrado;
   } );
@@ -30,6 +26,7 @@
     document.getElementById("cifrar2").style.display="none";
     document.getElementById("descifrar2").style.display="none";
     document.getElementById("cifrar1").style.display="block";
+    let name=document.getElementById("nombre").value;
     document.getElementById("saludoCifrar").innerHTML= name + " para cifrar tu mensaje debes escribirlo en la siguiente caja de texto";
     textoCifrar.value="";
     caraCifrar.value="";
@@ -40,6 +37,7 @@
     document.getElementById("cifrar2").style.display="none";
     document.getElementById("descifrar2").style.display="none";
     document.getElementById("descifrar1").style.display="block";
+    let name=document.getElementById("nombre").value;
     document.getElementById("saludoDescifrar").innerHTML= name + " para descifrar tu mensaje debes escribirlo en la siguiente caja de texto";
     textoDescifrar.value="";
     caraDescifrar.value="";
