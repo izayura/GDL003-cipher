@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Caesar Cipher</title>
     <link rel="stylesheet" href="style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet">
   </head>
   <body>
     <div id="root">
@@ -14,25 +16,18 @@
     <div id="bienvenida" style="display:none">
       <h1>Amor discreto te ayuda a que tus palabras de amor
       solo lleguen a quien deben leerlas</h1>
-       <h2>Vamos a entrar un poco en confianza</h2>
-       <h3>¿Como te llamas?</h3>
-      <form id="formulario"><center>
-<input type="text" class="text" id="nombre" placeholder="Escribe tu nombre aqui">
-<input type="button" class="button" id="botonIrCifrar"
-value="Cifra un mensaje">
-<input type="button" class="button" id="botonIrDescifrar"
-value="Descifrar un mensaje">
-<br>
-<br>
-</center>
-</form>
+       <h2>Selecciona lo que deseas hacer</h2>
+       <input type="button" class="button" id="botonIrCifrar" value="Cifra un mensaje">
+       <input type="button" class="button" id="botonIrDescifrar" value="Descifrar un mensaje">
+       <br>
+       <br>
     </div>
     <!--Saludar por nombre, pequeña explicación de como funciona, caja de texto
     para mensaje a codificar, seleccionar cuantos espacios recorrer en el
     cifrado,formulario para agregar contraseña al cifrado(si alcanza tiempo),
     boton para cifrar-->
     <div id="cifrar1" style="display:none">
-      <h1 id="saludoCifrar"></h1>
+      <h1 id="saludoCifrar">Para cifrar tu mensaje debes escribirlo en la siguiente caja de texto</h1>
       <h2>Tu mensaje puede incluir mayúsculas, minúsculas, signos y números</h2>
        <textarea class="text" id="textoCifrar" rows="10" cols="50">
        </textarea>
@@ -47,6 +42,7 @@ value="Descifrar un mensaje">
     o otro para descrifrar(que mande a Descifrar1)-->
     <div id="cifrar2" style="display:none">
       <h1 id="textoCifrado"></h1>
+      <h2>Ahora puedes copiar y pegar este mensaje para enviarlo donde quieras</h2>
       <input type="button" class="button" value="Cifrar otro mensaje" id="botonIrCifrar2" >
       <input type="button" class="button" value="Descifrar un mensaje" id="botonIrDescifrar2" >
       <br>
@@ -56,7 +52,7 @@ value="Descifrar un mensaje">
     para mensaje a decodificar, seleccionar cuantos espacios recorrer en el
     decifrado, pedir contraseña(si alcanzo), boton para descifrar-->
     <div id="descifrar1" style="display:none">
-        <h1 id="saludoDescifrar"></h1>
+        <h1 id="saludoDescifrar">Para descifrar tu mensaje debes escribirlo en la siguiente caja de texto</h1>
           <h2>Tu mensaje puede incluir mayúsculas, minúsculas, signos y números</h2>
         <textarea class="text" id="textoDescifrar" rows="10" cols="50">
       </textarea>
@@ -71,6 +67,7 @@ value="Descifrar un mensaje">
     otro mensaje o otro para cifrar(que mande a Cifrar1)-->
     <div id="descifrar2" style="display:none">
         <h1 id="textoDescifrado"></h1>
+        <h2>Ahora ya sabes lo que dice tu mensaje</h2>
       <input type="reset" class="button" value="Descifrar otro mensaje" id="botonIrDescifrar3">
       <input type="reset" class="button" value="Cifrar un mensaje" id="botonIrCifrar3">
       <br>
