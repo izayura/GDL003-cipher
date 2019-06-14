@@ -2,7 +2,7 @@
 
 ![](https://media.giphy.com/media/dYQ9x1sX1u1dIuLXG8/giphy.gif "Porque a veces hay que ser discretos en el amor")
 
-Amor discreto es una herramienta que te ayudará a que los mensajes que quieres enviar a tu ser amado no puedan ser leídos por cualquier persona, permitiendo así poder expresar libremente o hacer llegar mensajes que no te gustaría fueran interceptados con alguien más. **#DiscreciónAnteTodo ;)**
+Amor discreto es una herramienta que te ayudará a que los mensajes que quieres enviar a tu ser amado no puedan ser leídos por cualquier persona, permitiendo así poder expresar libremente o hacer llegar mensajes que no te gustaría fueran interceptados por alguien más. **#DiscreciónAnteTodo ;)**
 
 ![](https://media.giphy.com/media/l0Iy9H60MrTY7s7HG/giphy.gif "*cries in pizza*")
 ##### Haz tus mensajes llegar solamente a quien deben hacerlo <3
@@ -27,7 +27,7 @@ Solo debes ingresar a la página y seleccionar si quieres cifrar o descifrar un 
 ***
 # About Amor Discreto
 
-Esta página es una herramienta sencilla y de diseño simple para evitar el uso de dato innecesarios en caso de utilizarse con datos móviles. Utiliza un **diseño responsivo** por lo que puede visualizarse de manera correcta en computadoras, tablets y celulares. El objetivo principal es cifrar y descifrar mensajes(sin ningún limite de palabras) y poder acceder fácilmente al resultado para copiar y pegarlo donde se desee(whatsapp, mensajería telefónica, redes sociales, etc). Su correcto funcionamiento se basa en que ambas partes(quien envía el mensaje cifrado y quien lo recibe)conozcan previamente el número que se usará para el cifrado, y así aunque el mensaje y la pagina de Amor Discreto sea del conocimiento de alguien más, sea imposible leer el mensaje sin conocimiento del número utilizado en ese mensaje en especifico.
+Esta página es una herramienta sencilla y de diseño simple para evitar el uso de datos innecesarios en caso de utilizarse con datos móviles. Utiliza un **diseño responsivo** por lo que puede visualizarse de manera correcta en computadoras, tablets y celulares. El objetivo principal es cifrar y descifrar mensajes(sin ningún limite de palabras) y poder acceder fácilmente al resultado para copiar y pegarlo donde se desee(whatsapp, mensajería telefónica, redes sociales, etc). Su correcto funcionamiento se basa en que ambas partes(quien envía el mensaje cifrado y quien lo recibe)conozcan previamente el número que se usará para el cifrado, y así aunque el mensaje y la pagina de Amor Discreto sea del conocimiento de alguien más, sea imposible leer el mensaje sin conocimiento del número utilizado para cifrarlo.
 
 ![](https://media.giphy.com/media/GrB9uThYsoU3C/giphy.gif "All you need is love")
 ***
